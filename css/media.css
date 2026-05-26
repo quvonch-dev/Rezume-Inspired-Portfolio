@@ -1,0 +1,154 @@
+@media (max-width: 992px) {
+  .menu-btn {
+    display: inline-flex;
+  }
+
+  .nav {
+    position: fixed;
+    top: 82px;
+    left: 20px;
+    right: 20px;
+    padding: 24px;
+    border-radius: 20px;
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-12px);
+    transition: 0.25s ease;
+  }
+
+  .nav.open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .portfolio-grid,
+  .blog-grid,
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .about-image {
+    max-width: 620px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 80px 0;
+  }
+
+  .hero h1 {
+    font-size: 58px;
+  }
+
+  .resume-grid,
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-photo {
+    min-height: 430px;
+  }
+
+  .profile-info {
+    right: 16px;
+    bottom: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: min(100% - 28px, var(--container));
+  }
+
+  .nav-wrapper {
+    min-height: 72px;
+  }
+
+  .nav {
+    top: 72px;
+    left: 14px;
+    right: 14px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .theme-toggle,
+  .menu-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hero {
+    min-height: 92vh;
+  }
+
+  .hero h1 {
+    font-size: 46px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .portfolio-grid,
+  .blog-grid,
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-buttons {
+    justify-content: flex-start;
+  }
+
+  .portfolio-img,
+  .blog-img {
+    min-height: 225px;
+  }
+
+  .timeline-card,
+  .service-card,
+  .testimonial-card,
+  .contact-form,
+  .contact-info {
+    padding: 24px;
+  }
+
+  .about-actions {
+    flex-direction: column;
+  }
+
+  .profile-photo {
+    min-height: 360px;
+  }
+
+  .profile-info {
+    width: 140px;
+    padding: 18px;
+  }
+
+  .profile-info h3 {
+    font-size: 34px;
+  }
+}

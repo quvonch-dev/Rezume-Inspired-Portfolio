@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rezume Inspired Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/media.css" />
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrapper">
+      <a href="#home" class="logo">Re<span>zume</span></a>
+
+      <nav class="nav" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#resume" class="nav-link">Resume</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="ri-moon-line"></i>
+        </button>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+          <i class="ri-menu-3-line"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content reveal">
+        <p class="eyebrow">Hello, I am</p>
+        <h1>Charles Anderson</h1>
+        <p class="hero-subtitle">Frontend Developer & Creative UI Designer</p>
+        <div class="hero-buttons">
+          <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+          <a href="#contact" class="btn btn-outline">Hire Me</a>
+        </div>
+      </div>
+      <a href="#portfolio" class="scroll-down" aria-label="Scroll to portfolio">
+        <i class="ri-arrow-down-line"></i>
+      </a>
+    </section>
+
+    <section class="section portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Portfolio</p>
+          <h2>Featured <span>Works</span></h2>
+        </div>
+
+        <div class="filter-buttons reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="brand">Branding</button>
+          <button class="filter-btn" data-filter="photo">Photography</button>
+        </div>
+
+        <div class="portfolio-grid">
+          <article class="portfolio-card reveal" data-category="web">
+            <div class="portfolio-img img-1"></div>
+            <div class="portfolio-body">
+              <p>Web Design</p>
+              <h3>Minimal Agency Landing</h3>
+            </div>
+          </article>
+          <article class="portfolio-card reveal" data-category="brand">
+            <div class="portfolio-img img-2"></div>
+            <div class="portfolio-body">
+              <p>Branding</p>
+              <h3>Green Studio Identity</h3>
+            </div>
+          </article>
+          <article class="portfolio-card reveal" data-category="photo">
+            <div class="portfolio-img img-3"></div>
+            <div class="portfolio-body">
+              <p>Photography</p>
+              <h3>Urban Portrait Series</h3>
+            </div>
+          </article>
+          <article class="portfolio-card reveal" data-category="web">
+            <div class="portfolio-img img-4"></div>
+            <div class="portfolio-body">
+              <p>Dashboard</p>
+              <h3>Analytics Admin Panel</h3>
+            </div>
+          </article>
+          <article class="portfolio-card reveal" data-category="brand">
+            <div class="portfolio-img img-5"></div>
+            <div class="portfolio-body">
+              <p>Product</p>
+              <h3>Smart App Mockup</h3>
+            </div>
+          </article>
+          <article class="portfolio-card reveal" data-category="photo">
+            <div class="portfolio-img img-6"></div>
+            <div class="portfolio-body">
+              <p>Creative</p>
+              <h3>Studio Light Project</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section resume" id="resume">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Resume</p>
+          <h2>My <span>Resume</span></h2>
+        </div>
+
+        <div class="resume-grid">
+          <div class="resume-column reveal">
+            <h3>Education</h3>
+            <div class="timeline-card">
+              <span class="date"><i class="ri-calendar-line"></i> 2022 - 2026</span>
+              <h4>Computer Science</h4>
+              <p>Modern web development, algorithms, UI design, databases and software engineering basics.</p>
+              <small>Creative University</small>
+            </div>
+            <div class="timeline-card">
+              <span class="date"><i class="ri-calendar-line"></i> 2020 - 2022</span>
+              <h4>Frontend Bootcamp</h4>
+              <p>HTML, CSS, JavaScript, responsive layout, accessibility and project based learning.</p>
+              <small>Digital Academy</small>
+            </div>
+          </div>
+
+          <div class="resume-column reveal">
+            <h3>Experience</h3>
+            <div class="timeline-card">
+              <span class="date"><i class="ri-calendar-line"></i> 2024 - Present</span>
+              <h4>Frontend Developer</h4>
+              <p>Building fast, responsive websites with clean UI components and interactive features.</p>
+              <small>Pixel Studio</small>
+            </div>
+            <div class="timeline-card">
+              <span class="date"><i class="ri-calendar-line"></i> 2022 - 2024</span>
+              <h4>Junior Web Designer</h4>
+              <p>Created landing pages, design systems, portfolio layouts and client presentation pages.</p>
+              <small>Design Lab</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="about-image reveal">
+          <div class="profile-card">
+            <div class="profile-photo"></div>
+            <div class="profile-info">
+              <h3>5+</h3>
+              <p>Years Experience</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <p class="section-kicker">About Me</p>
+          <h2>Clean code, modern design and smooth user experience.</h2>
+          <p>
+            I create responsive portfolio websites, business landing pages and dashboards.
+            My goal is to turn ideas into simple, beautiful and useful web interfaces.
+          </p>
+          <p>
+            This page is built as a static HTML, CSS and JavaScript project, so you can easily edit it and upload it to GitHub Pages.
+          </p>
+          <div class="about-actions">
+            <a href="#contact" class="btn btn-primary">Hire Me</a>
+            <a href="#" class="btn btn-outline">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Services</p>
+          <h2>What I <span>Do</span></h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-icon"><i class="ri-layout-4-line"></i></div>
+            <h3>Web Design</h3>
+            <p>Modern landing pages with clean sections, great spacing and responsive design.</p>
+            <a href="#contact">Learn More <i class="ri-arrow-right-line"></i></a>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon"><i class="ri-code-s-slash-line"></i></div>
+            <h3>Frontend Development</h3>
+            <p>HTML, CSS and JavaScript websites with interactive menus, filters and animations.</p>
+            <a href="#contact">Learn More <i class="ri-arrow-right-line"></i></a>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon"><i class="ri-search-eye-line"></i></div>
+            <h3>SEO Basics</h3>
+            <p>Semantic structure, fast sections, readable content and beginner-friendly optimization.</p>
+            <a href="#contact">Learn More <i class="ri-arrow-right-line"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Testimonials</p>
+          <h2>Client <span>Reviews</span></h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card reveal">
+            <p>“The website looks professional, loads fast and works perfectly on mobile. Great job!”</p>
+            <div class="client">
+              <div class="avatar avatar-1"></div>
+              <div>
+                <h4>Daniel Lewis</h4>
+                <span>Startup Founder</span>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card reveal">
+            <p>“Clean design and clear code. It was very easy for our team to customize the sections.”</p>
+            <div class="client">
+              <div class="avatar avatar-2"></div>
+              <div>
+                <h4>Emma Stone</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section blog">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Blog</p>
+          <h2>Latest <span>Posts</span></h2>
+        </div>
+
+        <div class="blog-grid">
+          <article class="blog-card reveal">
+            <div class="blog-img blog-1"></div>
+            <div class="blog-content">
+              <span>Web Design · May 12, 2026</span>
+              <h3>How to create a clean portfolio homepage</h3>
+              <p>Simple section structure and spacing tips for beginner frontend developers.</p>
+            </div>
+          </article>
+          <article class="blog-card reveal">
+            <div class="blog-img blog-2"></div>
+            <div class="blog-content">
+              <span>JavaScript · May 18, 2026</span>
+              <h3>Adding portfolio filters with vanilla JS</h3>
+              <p>Use data attributes and click events to filter cards without any library.</p>
+            </div>
+          </article>
+          <article class="blog-card reveal">
+            <div class="blog-img blog-3"></div>
+            <div class="blog-content">
+              <span>CSS · May 24, 2026</span>
+              <h3>Responsive cards with CSS grid</h3>
+              <p>Build flexible layouts that automatically adapt to laptop, tablet and phone.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Contact</p>
+          <h2>Get <span>In Touch</span></h2>
+        </div>
+
+        <div class="contact-grid">
+          <form class="contact-form reveal" id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Subject" required>
+            <textarea placeholder="Write your message" required></textarea>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <p class="form-message" id="formMessage"></p>
+          </form>
+
+          <div class="contact-info reveal">
+            <h3>Contact Details</h3>
+            <div class="info-item">
+              <span>Email</span>
+              <p>hello@rezume.dev</p>
+            </div>
+            <div class="info-item">
+              <span>Phone</span>
+              <p>+998 90 123 45 67</p>
+            </div>
+            <div class="info-item">
+              <span>Address</span>
+              <p>Tashkent, Uzbekistan</p>
+            </div>
+            <div class="socials">
+              <a href="#"><i class="ri-github-fill"></i></a>
+              <a href="#"><i class="ri-linkedin-fill"></i></a>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+              <a href="#"><i class="ri-telegram-fill"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Rezume Inspired Portfolio. Built with HTML, CSS and JavaScript.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
